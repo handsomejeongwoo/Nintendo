@@ -1,1 +1,1 @@
-# typescript-practice
+# 니꼬썜 강의로 타입스크립트 
