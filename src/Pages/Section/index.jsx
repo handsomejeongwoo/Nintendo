@@ -20,66 +20,313 @@ const Section = () => {
     "https://www.nintendo.co.kr/front_images/banner/rolling/267/dbfa6d5b3ff44975f2593ec6ea5364f9.jpg",
   ];
 
+  const EventBaordImgs = [
+    "https://www.nintendo.co.kr/front_images/news/1208/546f7a65c6cf8e4b444badee72d0ebf5.jpg",
+    "https://www.nintendo.co.kr/front_images/news/1203/743351246e7765709b7cc3e37b35168b.png",
+    "https://www.nintendo.co.kr/front_images/news/1205/56d4e3e5b13cecdc4aa2ea1013e321b3.jpg",
+    "https://www.nintendo.co.kr/front_images/news/1201/c6d7abcbcaa591990babc37c55d53b86.jpg",
+    "https://www.nintendo.co.kr/front_images/news/1200/8f834a98e0c43e30de13928f149c9678.jpg",
+    "https://www.nintendo.co.kr/front_images/news/1190/9299a30e4e7426982bfc4308fe252838.jpg",
+    "https://www.nintendo.co.kr/front_images/news/1191/51bff6e430bc5906099f81f000ed2c31.jpg",
+    "https://www.nintendo.co.kr/front_images/news/1199/c00510bb5bedf31f938f872659f915b0.jpg",
+  ];
+
   return (
     <section>
-      <S.TitleImg backGroundImg={TitleImgs[nowImg]}></S.TitleImg>
-      <S.SlideImgBtnWrap
-        css={css`
-          position: relative;
-        `}
-      >
-        <div>
-          <FontAwesomeIcon
-            icon={faChevronLeft}
-            css={css`
-              position: absolute;
-              width: 20px;
-              height: 31px;
-              cursor: pointer;
-
-              left: 45%;
-            `}
-            onClick={() => {
-              if (nowImg === 0) {
-                setNowImg(7);
-              } else {
-                setNowImg(nowImg - 1);
-              }
-            }}
-          />
-          <FontAwesomeIcon
-            icon={faChevronRight}
-            css={css`
-              position: absolute;
-              width: 20px;
-              height: 31px;
-              cursor: pointer;
-
-              right: 45%;
-            `}
-            onClick={() => {
-              if (nowImg === 7) {
-                setNowImg(0);
-              } else {
-                setNowImg(nowImg + 1);
-              }
-            }}
-          />
-        </div>
-        <div
+      <S.Container>
+        <S.TitleImg backGroundImg={TitleImgs[nowImg]}></S.TitleImg>
+        <S.SlideImgBtnWrap
           css={css`
-            font-size: 20px;
-
-            position: absolute;
-            top: 50%;
-            left: 50%;
-
-            transform: translate(-50%, -50%);
+            position: relative;
           `}
         >
-          <span>{nowImg + 1}</span>/<span>8</span>
-        </div>
-      </S.SlideImgBtnWrap>
+          <div>
+            <FontAwesomeIcon
+              icon={faChevronLeft}
+              css={css`
+                position: absolute;
+                width: 20px;
+                height: 31px;
+                cursor: pointer;
+
+                left: 45%;
+              `}
+              onClick={() => {
+                if (nowImg === 0) {
+                  setNowImg(7);
+                } else {
+                  setNowImg(nowImg - 1);
+                }
+              }}
+            />
+            <FontAwesomeIcon
+              icon={faChevronRight}
+              css={css`
+                position: absolute;
+                width: 20px;
+                height: 31px;
+                cursor: pointer;
+
+                right: 45%;
+              `}
+              onClick={() => {
+                if (nowImg === 7) {
+                  setNowImg(0);
+                } else {
+                  setNowImg(nowImg + 1);
+                }
+              }}
+            />
+          </div>
+          <div
+            css={css`
+              font-size: 20px;
+
+              position: absolute;
+              top: 50%;
+              left: 50%;
+
+              transform: translate(-50%, -50%);
+            `}
+          >
+            <span>{nowImg + 1}</span>/<span>8</span>
+          </div>
+        </S.SlideImgBtnWrap>
+        <S.EventBoards>
+          <h2
+            css={css`
+              font-size: 26px;
+              font-weight: 700;
+              letter-spacing: -0.085em;
+            `}
+          >
+            새롭게 알려 드립니다
+            <span
+              css={css`
+                margin-left: 11px;
+                font-size: 15px;
+                font-weight: normal;
+                letter-spacing: -0.01em;
+                display: inline-block;
+                vertical-align: bottom;
+              `}
+            >
+              News & Update
+            </span>
+          </h2>
+          <span
+            css={css`
+              position: absolute;
+              top: 0px;
+              right: 0;
+              color: #e60012;
+              width: 16px;
+              height: 16px;
+              background-image: url(https://www.nintendo.co.kr/images/renew/main/icon_more.png);
+            `}
+          ></span>
+          <S.EventBoardsWrap>
+            <S.Boards>
+              <div>
+                <S.BoardImg backGroundImg={EventBaordImgs[0]} />
+                <div
+                  css={css`
+                    font-size: 14px;
+                    color: #e60012;
+                  `}
+                >
+                  뉴스
+                </div>
+                <S.IntroTitle>
+                  『베요네타 오리진:세레자와 길을 잃은 악마』 최신 정보 공개.
+                  수수께끼 풀기와 전투를 파워업시키는 「엘레멘트의 힘」을 소개.
+                </S.IntroTitle>
+                <S.BoardPostDate>
+                  2023.01.17
+                  <br />
+                  Nintendo Switch
+                </S.BoardPostDate>
+              </div>
+
+              <div
+                css={css`
+                  margin-left: 32px;
+                `}
+              >
+                <S.BoardImg backGroundImg={EventBaordImgs[1]} />
+                <div
+                  css={css`
+                    font-size: 14px;
+                    color: #e60012;
+                  `}
+                >
+                  뉴스
+                </div>
+                <S.IntroTitle>
+                  『스플래툰 3』 실력을 겨뤄보세요! 아이파크몰에서 「스플래툰 3
+                  이벤트 매치」 개최!
+                </S.IntroTitle>
+                <S.BoardPostDate>
+                  2023.02.16
+                  <br />
+                  Nintendo Switch
+                </S.BoardPostDate>
+              </div>
+
+              <div
+                css={css`
+                  margin-left: 32px;
+                `}
+              >
+                <S.BoardImg backGroundImg={EventBaordImgs[2]} />
+                <div
+                  css={css`
+                    font-size: 14px;
+                    color: #e60012;
+                  `}
+                >
+                  뉴스
+                </div>
+                <S.IntroTitle>
+                  지금부터 시작하는 『젤다의 전설 브레스 오브 더 와일드』
+                  홈페이지가 공개되었습니다.
+                </S.IntroTitle>
+                <S.BoardPostDate>
+                  2023.02.16
+                  <br />
+                  Nintendo Switch
+                </S.BoardPostDate>
+              </div>
+
+              <div
+                css={css`
+                  margin-left: 32px;
+                `}
+              >
+                <S.BoardImg backGroundImg={EventBaordImgs[3]} />
+                <div
+                  css={css`
+                    font-size: 14px;
+                    color: #e60012;
+                  `}
+                >
+                  뉴스
+                </div>
+                <S.IntroTitle>
+                  「별의 커비 30주년 팝업 스토어」 특설 페이지가 공개되었습니다.
+                </S.IntroTitle>
+                <S.BoardPostDate>
+                  2023.02.15
+                  <br />
+                  Nintendo Switch
+                </S.BoardPostDate>
+              </div>
+            </S.Boards>
+            <S.Boards
+              css={css`
+                margin-top: 40px;
+              `}
+            >
+              <div>
+                <S.BoardImg backGroundImg={EventBaordImgs[4]} />
+                <div
+                  css={css`
+                    font-size: 14px;
+                    color: #e60012;
+                  `}
+                >
+                  뉴스
+                </div>
+                <S.IntroTitle>
+                  언제나 커비와 『안아줘, 커비』 낭독 영상 제6탄이
+                  공개되었습니다.
+                </S.IntroTitle>
+                <S.BoardPostDate>
+                  2023.02.15
+                  <br />
+                  Nintendo Switch
+                </S.BoardPostDate>
+              </div>
+
+              <div
+                css={css`
+                  margin-left: 32px;
+                `}
+              >
+                <S.BoardImg backGroundImg={EventBaordImgs[5]} />
+                <div
+                  css={css`
+                    font-size: 14px;
+                    color: #e60012;
+                  `}
+                >
+                  뉴스
+                </div>
+                <S.IntroTitle>
+                  DDP에서 「포켓몬스터스칼렛・바이올렛」 체험 이벤트가 개최!
+                </S.IntroTitle>
+                <S.BoardPostDate>
+                  2023.02.10
+                  <br />
+                  Nintendo Switch
+                </S.BoardPostDate>
+              </div>
+
+              <div
+                css={css`
+                  margin-left: 32px;
+                `}
+              >
+                <S.BoardImg backGroundImg={EventBaordImgs[6]} />
+                <div
+                  css={css`
+                    font-size: 14px;
+                    color: #e60012;
+                  `}
+                >
+                  뉴스
+                </div>
+                <S.IntroTitle>
+                  『젤다의 전설 티어스 오브 더 킹덤』, 『피크민 4』,
+                  『메트로이드 프라임 리마스터』, 『베요네타 오리진: 세레자와
+                  길을 잃은 악마』 등, Nintendo Switch로 발매되는 타이틀과
+                  서비스의 최신 정보를 전달!
+                </S.IntroTitle>
+                <S.BoardPostDate>
+                  2023.02.09
+                  <br />
+                  Nintendo Switch
+                </S.BoardPostDate>
+              </div>
+
+              <div
+                css={css`
+                  margin-left: 32px;
+                `}
+              >
+                <S.BoardImg backGroundImg={EventBaordImgs[7]} />
+                <div
+                  css={css`
+                    font-size: 14px;
+                    color: #e60012;
+                  `}
+                >
+                  뉴스
+                </div>
+                <S.IntroTitle>
+                  『별의 커비 Wii 디럭스』의 공식 소개 페이지가 공개되었습니다.
+                </S.IntroTitle>
+                <S.BoardPostDate>
+                  2023.02.13
+                  <br />
+                  Nintendo Switch
+                </S.BoardPostDate>
+              </div>
+            </S.Boards>
+          </S.EventBoardsWrap>
+        </S.EventBoards>
+        <S.EshopBanner></S.EshopBanner>
+      </S.Container>
     </section>
   );
 };
