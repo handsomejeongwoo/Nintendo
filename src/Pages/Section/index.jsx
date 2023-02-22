@@ -4,6 +4,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import Korean from "../../Imgs/한국어 대응.png";
 import * as S from "./style";
 
 const Section = () => {
@@ -29,6 +30,12 @@ const Section = () => {
     "https://www.nintendo.co.kr/front_images/news/1190/9299a30e4e7426982bfc4308fe252838.jpg",
     "https://www.nintendo.co.kr/front_images/news/1191/51bff6e430bc5906099f81f000ed2c31.jpg",
     "https://www.nintendo.co.kr/front_images/news/1199/c00510bb5bedf31f938f872659f915b0.jpg",
+    "https://www.nintendo.co.kr/front_images/sw/switch/3032/b3d35fb0683afa1f5706fe40f3c890f4.png",
+    "https://www.nintendo.co.kr/front_images/sw/switch/2809/385f4e593a96d851a17fffe1e12142fd.jpg",
+    "https://www.nintendo.co.kr/front_images/sw/switch/2568/d4020211358f3384e519bfc5d4a6cc0b.jpg",
+    "https://www.nintendo.co.kr/front_images/sw/switch/2882/61a55c3c2004d8dd30a6a4047e9b007d.jpg",
+    "https://www.nintendo.co.kr/front_images/sw/switch/2218/146074fcb32b408c590de59e155c0b2d.jpg",
+    "https://www.nintendo.co.kr/front_images/sw/switch/427/427.jpg",
   ];
 
   return (
@@ -135,9 +142,9 @@ const Section = () => {
                     color: #e60012;
                   `}
                 >
-                  뉴스
+                  Nintendo Switch
                 </div>
-                <S.IntroTitle>
+                <S.IntroTitle height="66px">
                   『베요네타 오리진:세레자와 길을 잃은 악마』 최신 정보 공개.
                   수수께끼 풀기와 전투를 파워업시키는 「엘레멘트의 힘」을 소개.
                 </S.IntroTitle>
@@ -162,7 +169,7 @@ const Section = () => {
                 >
                   뉴스
                 </div>
-                <S.IntroTitle>
+                <S.IntroTitle height="66px">
                   『스플래툰 3』 실력을 겨뤄보세요! 아이파크몰에서 「스플래툰 3
                   이벤트 매치」 개최!
                 </S.IntroTitle>
@@ -187,7 +194,7 @@ const Section = () => {
                 >
                   뉴스
                 </div>
-                <S.IntroTitle>
+                <S.IntroTitle height="66px">
                   지금부터 시작하는 『젤다의 전설 브레스 오브 더 와일드』
                   홈페이지가 공개되었습니다.
                 </S.IntroTitle>
@@ -212,7 +219,7 @@ const Section = () => {
                 >
                   뉴스
                 </div>
-                <S.IntroTitle>
+                <S.IntroTitle height="66px">
                   「별의 커비 30주년 팝업 스토어」 특설 페이지가 공개되었습니다.
                 </S.IntroTitle>
                 <S.BoardPostDate>
@@ -237,7 +244,7 @@ const Section = () => {
                 >
                   뉴스
                 </div>
-                <S.IntroTitle>
+                <S.IntroTitle height="66px">
                   언제나 커비와 『안아줘, 커비』 낭독 영상 제6탄이
                   공개되었습니다.
                 </S.IntroTitle>
@@ -262,7 +269,7 @@ const Section = () => {
                 >
                   뉴스
                 </div>
-                <S.IntroTitle>
+                <S.IntroTitle height="66px">
                   DDP에서 「포켓몬스터스칼렛・바이올렛」 체험 이벤트가 개최!
                 </S.IntroTitle>
                 <S.BoardPostDate>
@@ -286,7 +293,7 @@ const Section = () => {
                 >
                   뉴스
                 </div>
-                <S.IntroTitle>
+                <S.IntroTitle height="66px">
                   『젤다의 전설 티어스 오브 더 킹덤』, 『피크민 4』,
                   『메트로이드 프라임 리마스터』, 『베요네타 오리진: 세레자와
                   길을 잃은 악마』 등, Nintendo Switch로 발매되는 타이틀과
@@ -304,7 +311,7 @@ const Section = () => {
                   margin-left: 32px;
                 `}
               >
-                <S.BoardImg backGroundImg={EventBaordImgs[7]} />
+                <S.BoardImg backGroundImg={EventBaordImgs[8]} />
                 <div
                   css={css`
                     font-size: 14px;
@@ -313,7 +320,7 @@ const Section = () => {
                 >
                   뉴스
                 </div>
-                <S.IntroTitle>
+                <S.IntroTitle height="66px">
                   『별의 커비 Wii 디럭스』의 공식 소개 페이지가 공개되었습니다.
                 </S.IntroTitle>
                 <S.BoardPostDate>
@@ -326,6 +333,397 @@ const Section = () => {
           </S.EventBoardsWrap>
         </S.EventBoards>
         <S.EshopBanner></S.EshopBanner>
+        <S.MainGamesWrap>
+          <h2
+            css={css`
+              font-size: 26px;
+              font-weight: 700;
+              letter-spacing: -0.085em;
+            `}
+          >
+            주요 소프트웨어
+            <span
+              css={css`
+                margin-left: 11px;
+                font-size: 15px;
+                font-weight: normal;
+                letter-spacing: -0.01em;
+                display: inline-block;
+                vertical-align: bottom;
+              `}
+            >
+              Game Title
+            </span>
+          </h2>
+          <S.EventBoardsWrap>
+            <S.Boards>
+              <div>
+                <S.BoardImg backGroundImg={EventBaordImgs[8]} />
+                <div
+                  css={css`
+                    font-size: 14px;
+                    color: #e60012;
+                  `}
+                >
+                  Nintendo Switch
+                  <span
+                    css={css`
+                      float: right;
+                      display: flex;
+                      justify-content: space-between;
+                      width: 54.77px;
+                    `}
+                  >
+                    <S.GameKategory>PK</S.GameKategory>
+                    <S.GameKategory>DL</S.GameKategory>
+                  </span>
+                </div>
+                <S.IntroTitle height="44px">파이어 엠블렘 Engage</S.IntroTitle>
+                <S.BoardPostDate
+                  css={css`
+                    display: flex;
+                    justify-content: space-between;
+                  `}
+                >
+                  2023.01.20
+                  <br />
+                  한국닌텐도
+                  <img
+                    src={Korean}
+                    css={css`
+                      width: 60px;
+                      height: 36px;
+                      float: right;
+                    `}
+                  />
+                </S.BoardPostDate>
+              </div>
+              <div
+                css={css`
+                  margin-left: 32px;
+                `}
+              >
+                <S.BoardImg backGroundImg={EventBaordImgs[5]} />
+                <div
+                  css={css`
+                    font-size: 14px;
+                    color: #e60012;
+                  `}
+                >
+                  Nintendo Switch
+                  <span
+                    css={css`
+                      float: right;
+                      display: flex;
+                      justify-content: space-between;
+                      width: 54.77px;
+                    `}
+                  >
+                    <S.GameKategory>PK</S.GameKategory>
+                    <S.GameKategory>DL</S.GameKategory>
+                  </span>
+                </div>
+                <S.IntroTitle height="44px">
+                  포켓몬스터스칼렛・바이올렛
+                </S.IntroTitle>
+                <S.BoardPostDate
+                  css={css`
+                    display: flex;
+                    justify-content: space-between;
+                  `}
+                >
+                  2022.11.18
+                  <br />
+                  한국닌텐도
+                  <img
+                    src={Korean}
+                    css={css`
+                      width: 60px;
+                      height: 36px;
+                      float: right;
+                    `}
+                  />
+                </S.BoardPostDate>
+              </div>
+              <div
+                css={css`
+                  margin-left: 32px;
+                `}
+              >
+                <S.BoardImg backGroundImg={EventBaordImgs[9]} />
+                <div
+                  css={css`
+                    font-size: 14px;
+                    color: #e60012;
+                  `}
+                >
+                  Nintendo Switch
+                  <span
+                    css={css`
+                      float: right;
+                      display: flex;
+                      justify-content: space-between;
+                      width: 54.77px;
+                    `}
+                  >
+                    <S.GameKategory>PK</S.GameKategory>
+                    <S.GameKategory>DL</S.GameKategory>
+                  </span>
+                </div>
+                <S.IntroTitle height="44px">베요네타 3</S.IntroTitle>
+                <S.BoardPostDate
+                  css={css`
+                    display: flex;
+                    justify-content: space-between;
+                  `}
+                >
+                  2022.10.28
+                  <br />
+                  한국닌텐도
+                  <img
+                    src={Korean}
+                    css={css`
+                      width: 60px;
+                      height: 36px;
+                      float: right;
+                    `}
+                  />
+                </S.BoardPostDate>
+              </div>
+
+              <div
+                css={css`
+                  margin-left: 32px;
+                `}
+              >
+                <S.BoardImg backGroundImg={EventBaordImgs[1]} />
+                <div
+                  css={css`
+                    font-size: 14px;
+                    color: #e60012;
+                  `}
+                >
+                  Nintendo Switch
+                  <span
+                    css={css`
+                      float: right;
+                      display: flex;
+                      justify-content: space-between;
+                      width: 54.77px;
+                    `}
+                  >
+                    <S.GameKategory>PK</S.GameKategory>
+                    <S.GameKategory>DL</S.GameKategory>
+                  </span>
+                </div>
+                <S.IntroTitle height="44px">스플래툰 3</S.IntroTitle>
+                <S.BoardPostDate
+                  css={css`
+                    display: flex;
+                    justify-content: space-between;
+                  `}
+                >
+                  2022.09.09
+                  <br />
+                  한국닌텐도
+                  <img
+                    src={Korean}
+                    css={css`
+                      width: 60px;
+                      height: 36px;
+                      float: right;
+                    `}
+                  />
+                </S.BoardPostDate>
+              </div>
+            </S.Boards>
+
+            <S.Boards
+              css={css`
+                margin-top: 40px;
+              `}
+            >
+              <div css={css``}>
+                <S.BoardImg backGroundImg={EventBaordImgs[10]} />
+                <div
+                  css={css`
+                    font-size: 14px;
+                    color: #e60012;
+                  `}
+                >
+                  Nintendo Switch
+                  <span
+                    css={css`
+                      float: right;
+                      display: flex;
+                      justify-content: space-between;
+                      width: 54.77px;
+                    `}
+                  >
+                    <S.GameKategory>PK</S.GameKategory>
+                    <S.GameKategory>DL</S.GameKategory>
+                  </span>
+                </div>
+                <S.IntroTitle height="44px">커비의 드림 뷔페</S.IntroTitle>
+                <S.BoardPostDate
+                  css={css`
+                    display: flex;
+                    justify-content: space-between;
+                  `}
+                >
+                  2022.08.17
+                  <br />
+                  한국닌텐도
+                  <img
+                    src={Korean}
+                    css={css`
+                      width: 60px;
+                      height: 36px;
+                      float: right;
+                    `}
+                  />
+                </S.BoardPostDate>
+              </div>
+              <div
+                css={css`
+                  margin-left: 32px;
+                `}
+              >
+                <S.BoardImg backGroundImg={EventBaordImgs[11]} />
+                <div
+                  css={css`
+                    font-size: 14px;
+                    color: #e60012;
+                  `}
+                >
+                  Nintendo Switch
+                  <span
+                    css={css`
+                      float: right;
+                      display: flex;
+                      justify-content: space-between;
+                      width: 54.77px;
+                    `}
+                  >
+                    <S.GameKategory>PK</S.GameKategory>
+                    <S.GameKategory>DL</S.GameKategory>
+                  </span>
+                </div>
+                <S.IntroTitle height="44px">
+                  Nintendo Switch Sports
+                </S.IntroTitle>
+                <S.BoardPostDate
+                  css={css`
+                    display: flex;
+                    justify-content: space-between;
+                  `}
+                >
+                  2022.04.29
+                  <br />
+                  한국닌텐도
+                  <img
+                    src={Korean}
+                    css={css`
+                      width: 60px;
+                      height: 36px;
+                      float: right;
+                    `}
+                  />
+                </S.BoardPostDate>
+              </div>
+              <div
+                css={css`
+                  margin-left: 32px;
+                `}
+              >
+                <S.BoardImg backGroundImg={EventBaordImgs[12]} />
+                <div
+                  css={css`
+                    font-size: 14px;
+                    color: #e60012;
+                  `}
+                >
+                  Nintendo Switch
+                  <span
+                    css={css`
+                      float: right;
+                      display: flex;
+                      justify-content: space-between;
+                      width: 106px;
+                    `}
+                  >
+                    <S.GameKategory>PK</S.GameKategory>
+                    <S.GameKategory>DL</S.GameKategory>
+                    <S.GameKategory>체험판</S.GameKategory>
+                  </span>
+                </div>
+                <S.IntroTitle height="44px">별의커비 디스커버리</S.IntroTitle>
+                <S.BoardPostDate
+                  css={css`
+                    display: flex;
+                    justify-content: space-between;
+                  `}
+                >
+                  2022.03.25
+                  <br />
+                  한국닌텐도
+                  <img
+                    src={Korean}
+                    css={css`
+                      width: 60px;
+                      height: 36px;
+                      float: right;
+                    `}
+                  />
+                </S.BoardPostDate>
+              </div>
+
+              <div
+                css={css`
+                  margin-left: 32px;
+                `}
+              >
+                <S.BoardImg backGroundImg={EventBaordImgs[13]} />
+                <div
+                  css={css`
+                    font-size: 14px;
+                    color: #e60012;
+                  `}
+                >
+                  Nintendo Switch
+                  <span
+                    css={css`
+                      float: right;
+                      display: flex;
+                      justify-content: space-between;
+                    `}
+                  >
+                    <S.GameKategory>PK</S.GameKategory>
+                  </span>
+                </div>
+                <S.IntroTitle height="44px">링 피트 어드벤처</S.IntroTitle>
+                <S.BoardPostDate
+                  css={css`
+                    display: flex;
+                    justify-content: space-between;
+                  `}
+                >
+                  2019.10.18
+                  <br />
+                  한국닌텐도
+                  <img
+                    src={Korean}
+                    css={css`
+                      width: 60px;
+                      height: 36px;
+                      float: right;
+                    `}
+                  />
+                </S.BoardPostDate>
+              </div>
+            </S.Boards>
+          </S.EventBoardsWrap>
+        </S.MainGamesWrap>
       </S.Container>
     </section>
   );
