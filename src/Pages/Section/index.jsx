@@ -4,6 +4,9 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { faCreditCard } from "@fortawesome/free-solid-svg-icons";
+import { faGamepad } from "@fortawesome/free-solid-svg-icons";
 import Korean from "../../Imgs/한국어 대응.png";
 import * as S from "./style";
 
@@ -38,6 +41,15 @@ const Section = () => {
     "https://www.nintendo.co.kr/front_images/sw/switch/427/427.jpg",
   ];
 
+  const GameBanner = [
+    "	https://www.nintendo.co.kr/images/renew/main/banner_main_bottom01.jpg",
+    "	https://www.nintendo.co.kr/images/renew/main/banner_main_bottom02.jpg",
+    "	https://www.nintendo.co.kr/images/renew/main/banner_main_bottom03.jpg",
+    "	https://www.nintendo.co.kr/images/renew/main/banner_main_bottom04.jpg",
+    "	https://www.nintendo.co.kr/images/renew/main/banner_main_bottom05.jpg",
+    "https://www.nintendo.co.kr/images/renew/main/banner_main_bottom06.jpg",
+  ];
+
   return (
     <section>
       <S.Container>
@@ -52,8 +64,8 @@ const Section = () => {
               icon={faChevronLeft}
               css={css`
                 position: absolute;
-                width: 20px;
-                height: 31px;
+                width: 1.25rem;
+                height: 1.9375rem;
                 cursor: pointer;
 
                 left: 45%;
@@ -70,8 +82,8 @@ const Section = () => {
               icon={faChevronRight}
               css={css`
                 position: absolute;
-                width: 20px;
-                height: 31px;
+                width: 1.25rem;
+                height: 1.9375rem;
                 cursor: pointer;
 
                 right: 45%;
@@ -87,7 +99,7 @@ const Section = () => {
           </div>
           <div
             css={css`
-              font-size: 20px;
+              font-size: 1.25rem;
 
               position: absolute;
               top: 50%;
@@ -102,7 +114,7 @@ const Section = () => {
         <S.EventBoards>
           <h2
             css={css`
-              font-size: 26px;
+              font-size: 1.625rem;
               font-weight: 700;
               letter-spacing: -0.085em;
             `}
@@ -110,8 +122,8 @@ const Section = () => {
             새롭게 알려 드립니다
             <span
               css={css`
-                margin-left: 11px;
-                font-size: 15px;
+                margin-left: 0.6875rem;
+                font-size: 0.9375rem;
                 font-weight: normal;
                 letter-spacing: -0.01em;
                 display: inline-block;
@@ -127,8 +139,8 @@ const Section = () => {
               top: 0px;
               right: 0;
               color: #e60012;
-              width: 16px;
-              height: 16px;
+              width: 1rem;
+              height: 1rem;
               background-image: url(https://www.nintendo.co.kr/images/renew/main/icon_more.png);
             `}
           ></span>
@@ -138,13 +150,13 @@ const Section = () => {
                 <S.BoardImg backGroundImg={EventBaordImgs[0]} />
                 <div
                   css={css`
-                    font-size: 14px;
+                    font-size: 0.875rem;
                     color: #e60012;
                   `}
                 >
                   Nintendo Switch
                 </div>
-                <S.IntroTitle height="66px">
+                <S.IntroTitle height="4.125rem">
                   『베요네타 오리진:세레자와 길을 잃은 악마』 최신 정보 공개.
                   수수께끼 풀기와 전투를 파워업시키는 「엘레멘트의 힘」을 소개.
                 </S.IntroTitle>
@@ -157,19 +169,19 @@ const Section = () => {
 
               <div
                 css={css`
-                  margin-left: 32px;
+                  margin-left: 2rem;
                 `}
               >
                 <S.BoardImg backGroundImg={EventBaordImgs[1]} />
                 <div
                   css={css`
-                    font-size: 14px;
+                    font-size: 0.875rem;
                     color: #e60012;
                   `}
                 >
                   뉴스
                 </div>
-                <S.IntroTitle height="66px">
+                <S.IntroTitle height="4.125rem">
                   『스플래툰 3』 실력을 겨뤄보세요! 아이파크몰에서 「스플래툰 3
                   이벤트 매치」 개최!
                 </S.IntroTitle>
@@ -182,19 +194,19 @@ const Section = () => {
 
               <div
                 css={css`
-                  margin-left: 32px;
+                  margin-left: 2rem;
                 `}
               >
                 <S.BoardImg backGroundImg={EventBaordImgs[2]} />
                 <div
                   css={css`
-                    font-size: 14px;
+                    font-size: 0.875rem;
                     color: #e60012;
                   `}
                 >
                   뉴스
                 </div>
-                <S.IntroTitle height="66px">
+                <S.IntroTitle height="4.125rem">
                   지금부터 시작하는 『젤다의 전설 브레스 오브 더 와일드』
                   홈페이지가 공개되었습니다.
                 </S.IntroTitle>
@@ -207,19 +219,19 @@ const Section = () => {
 
               <div
                 css={css`
-                  margin-left: 32px;
+                  margin-left: 2rem;
                 `}
               >
                 <S.BoardImg backGroundImg={EventBaordImgs[3]} />
                 <div
                   css={css`
-                    font-size: 14px;
+                    font-size: 0.875rem;
                     color: #e60012;
                   `}
                 >
                   뉴스
                 </div>
-                <S.IntroTitle height="66px">
+                <S.IntroTitle height="4.125rem">
                   「별의 커비 30주년 팝업 스토어」 특설 페이지가 공개되었습니다.
                 </S.IntroTitle>
                 <S.BoardPostDate>
@@ -231,20 +243,20 @@ const Section = () => {
             </S.Boards>
             <S.Boards
               css={css`
-                margin-top: 40px;
+                margin-top: 2.5rem;
               `}
             >
               <div>
                 <S.BoardImg backGroundImg={EventBaordImgs[4]} />
                 <div
                   css={css`
-                    font-size: 14px;
+                    font-size: 0.875rem;
                     color: #e60012;
                   `}
                 >
                   뉴스
                 </div>
-                <S.IntroTitle height="66px">
+                <S.IntroTitle height="4.125rem">
                   언제나 커비와 『안아줘, 커비』 낭독 영상 제6탄이
                   공개되었습니다.
                 </S.IntroTitle>
@@ -257,19 +269,19 @@ const Section = () => {
 
               <div
                 css={css`
-                  margin-left: 32px;
+                  margin-left: 2rem;
                 `}
               >
                 <S.BoardImg backGroundImg={EventBaordImgs[5]} />
                 <div
                   css={css`
-                    font-size: 14px;
+                    font-size: 0.875rem;
                     color: #e60012;
                   `}
                 >
                   뉴스
                 </div>
-                <S.IntroTitle height="66px">
+                <S.IntroTitle height="4.125rem">
                   DDP에서 「포켓몬스터스칼렛・바이올렛」 체험 이벤트가 개최!
                 </S.IntroTitle>
                 <S.BoardPostDate>
@@ -281,19 +293,19 @@ const Section = () => {
 
               <div
                 css={css`
-                  margin-left: 32px;
+                  margin-left: 2rem;
                 `}
               >
                 <S.BoardImg backGroundImg={EventBaordImgs[6]} />
                 <div
                   css={css`
-                    font-size: 14px;
+                    font-size: 0.875rem;
                     color: #e60012;
                   `}
                 >
                   뉴스
                 </div>
-                <S.IntroTitle height="66px">
+                <S.IntroTitle height="4.125rem">
                   『젤다의 전설 티어스 오브 더 킹덤』, 『피크민 4』,
                   『메트로이드 프라임 리마스터』, 『베요네타 오리진: 세레자와
                   길을 잃은 악마』 등, Nintendo Switch로 발매되는 타이틀과
@@ -308,19 +320,19 @@ const Section = () => {
 
               <div
                 css={css`
-                  margin-left: 32px;
+                  margin-left: 2rem;
                 `}
               >
                 <S.BoardImg backGroundImg={EventBaordImgs[8]} />
                 <div
                   css={css`
-                    font-size: 14px;
+                    font-size: 0.875rem;
                     color: #e60012;
                   `}
                 >
                   뉴스
                 </div>
-                <S.IntroTitle height="66px">
+                <S.IntroTitle height="4.125rem">
                   『별의 커비 Wii 디럭스』의 공식 소개 페이지가 공개되었습니다.
                 </S.IntroTitle>
                 <S.BoardPostDate>
@@ -336,7 +348,7 @@ const Section = () => {
         <S.MainGamesWrap>
           <h2
             css={css`
-              font-size: 26px;
+              font-size: 1.625rem;
               font-weight: 700;
               letter-spacing: -0.085em;
             `}
@@ -344,8 +356,8 @@ const Section = () => {
             주요 소프트웨어
             <span
               css={css`
-                margin-left: 11px;
-                font-size: 15px;
+                margin-left: 0.6875rem;
+                font-size: 0.9375rem;
                 font-weight: normal;
                 letter-spacing: -0.01em;
                 display: inline-block;
@@ -361,7 +373,7 @@ const Section = () => {
                 <S.BoardImg backGroundImg={EventBaordImgs[8]} />
                 <div
                   css={css`
-                    font-size: 14px;
+                    font-size: 0.875rem;
                     color: #e60012;
                   `}
                 >
@@ -371,14 +383,16 @@ const Section = () => {
                       float: right;
                       display: flex;
                       justify-content: space-between;
-                      width: 54.77px;
+                      width: 3.4231rem;
                     `}
                   >
                     <S.GameKategory>PK</S.GameKategory>
                     <S.GameKategory>DL</S.GameKategory>
                   </span>
                 </div>
-                <S.IntroTitle height="44px">파이어 엠블렘 Engage</S.IntroTitle>
+                <S.IntroTitle height="2.75rem">
+                  파이어 엠블렘 Engage
+                </S.IntroTitle>
                 <S.BoardPostDate
                   css={css`
                     display: flex;
@@ -391,8 +405,8 @@ const Section = () => {
                   <img
                     src={Korean}
                     css={css`
-                      width: 60px;
-                      height: 36px;
+                      width: 3.75rem;
+                      height: 2.25rem;
                       float: right;
                     `}
                   />
@@ -400,13 +414,13 @@ const Section = () => {
               </div>
               <div
                 css={css`
-                  margin-left: 32px;
+                  margin-left: 2rem;
                 `}
               >
                 <S.BoardImg backGroundImg={EventBaordImgs[5]} />
                 <div
                   css={css`
-                    font-size: 14px;
+                    font-size: 0.875rem;
                     color: #e60012;
                   `}
                 >
@@ -416,14 +430,14 @@ const Section = () => {
                       float: right;
                       display: flex;
                       justify-content: space-between;
-                      width: 54.77px;
+                      width: 3.4231rem;
                     `}
                   >
                     <S.GameKategory>PK</S.GameKategory>
                     <S.GameKategory>DL</S.GameKategory>
                   </span>
                 </div>
-                <S.IntroTitle height="44px">
+                <S.IntroTitle height="2.75rem">
                   포켓몬스터스칼렛・바이올렛
                 </S.IntroTitle>
                 <S.BoardPostDate
@@ -438,8 +452,8 @@ const Section = () => {
                   <img
                     src={Korean}
                     css={css`
-                      width: 60px;
-                      height: 36px;
+                      width: 3.75rem;
+                      height: 2.25rem;
                       float: right;
                     `}
                   />
@@ -447,13 +461,13 @@ const Section = () => {
               </div>
               <div
                 css={css`
-                  margin-left: 32px;
+                  margin-left: 2rem;
                 `}
               >
                 <S.BoardImg backGroundImg={EventBaordImgs[9]} />
                 <div
                   css={css`
-                    font-size: 14px;
+                    font-size: 0.875rem;
                     color: #e60012;
                   `}
                 >
@@ -463,14 +477,14 @@ const Section = () => {
                       float: right;
                       display: flex;
                       justify-content: space-between;
-                      width: 54.77px;
+                      width: 3.4231rem;
                     `}
                   >
                     <S.GameKategory>PK</S.GameKategory>
                     <S.GameKategory>DL</S.GameKategory>
                   </span>
                 </div>
-                <S.IntroTitle height="44px">베요네타 3</S.IntroTitle>
+                <S.IntroTitle height="2.75rem">베요네타 3</S.IntroTitle>
                 <S.BoardPostDate
                   css={css`
                     display: flex;
@@ -483,8 +497,8 @@ const Section = () => {
                   <img
                     src={Korean}
                     css={css`
-                      width: 60px;
-                      height: 36px;
+                      width: 3.75rem;
+                      height: 2.25rem;
                       float: right;
                     `}
                   />
@@ -493,13 +507,13 @@ const Section = () => {
 
               <div
                 css={css`
-                  margin-left: 32px;
+                  margin-left: 2rem;
                 `}
               >
                 <S.BoardImg backGroundImg={EventBaordImgs[1]} />
                 <div
                   css={css`
-                    font-size: 14px;
+                    font-size: 0.875rem;
                     color: #e60012;
                   `}
                 >
@@ -509,14 +523,14 @@ const Section = () => {
                       float: right;
                       display: flex;
                       justify-content: space-between;
-                      width: 54.77px;
+                      width: 3.4231rem;
                     `}
                   >
                     <S.GameKategory>PK</S.GameKategory>
                     <S.GameKategory>DL</S.GameKategory>
                   </span>
                 </div>
-                <S.IntroTitle height="44px">스플래툰 3</S.IntroTitle>
+                <S.IntroTitle height="2.75rem">스플래툰 3</S.IntroTitle>
                 <S.BoardPostDate
                   css={css`
                     display: flex;
@@ -529,8 +543,8 @@ const Section = () => {
                   <img
                     src={Korean}
                     css={css`
-                      width: 60px;
-                      height: 36px;
+                      width: 3.75rem;
+                      height: 2.25rem;
                       float: right;
                     `}
                   />
@@ -540,14 +554,14 @@ const Section = () => {
 
             <S.Boards
               css={css`
-                margin-top: 40px;
+                margin-top: 2.5rem;
               `}
             >
               <div css={css``}>
                 <S.BoardImg backGroundImg={EventBaordImgs[10]} />
                 <div
                   css={css`
-                    font-size: 14px;
+                    font-size: 0.875rem;
                     color: #e60012;
                   `}
                 >
@@ -557,14 +571,14 @@ const Section = () => {
                       float: right;
                       display: flex;
                       justify-content: space-between;
-                      width: 54.77px;
+                      width: 3.4231rem;
                     `}
                   >
                     <S.GameKategory>PK</S.GameKategory>
                     <S.GameKategory>DL</S.GameKategory>
                   </span>
                 </div>
-                <S.IntroTitle height="44px">커비의 드림 뷔페</S.IntroTitle>
+                <S.IntroTitle height="2.75rem">커비의 드림 뷔페</S.IntroTitle>
                 <S.BoardPostDate
                   css={css`
                     display: flex;
@@ -577,8 +591,8 @@ const Section = () => {
                   <img
                     src={Korean}
                     css={css`
-                      width: 60px;
-                      height: 36px;
+                      width: 3.75rem;
+                      height: 2.25rem;
                       float: right;
                     `}
                   />
@@ -586,13 +600,13 @@ const Section = () => {
               </div>
               <div
                 css={css`
-                  margin-left: 32px;
+                  margin-left: 2rem;
                 `}
               >
                 <S.BoardImg backGroundImg={EventBaordImgs[11]} />
                 <div
                   css={css`
-                    font-size: 14px;
+                    font-size: 0.875rem;
                     color: #e60012;
                   `}
                 >
@@ -602,14 +616,14 @@ const Section = () => {
                       float: right;
                       display: flex;
                       justify-content: space-between;
-                      width: 54.77px;
+                      width: 3.4231rem;
                     `}
                   >
                     <S.GameKategory>PK</S.GameKategory>
                     <S.GameKategory>DL</S.GameKategory>
                   </span>
                 </div>
-                <S.IntroTitle height="44px">
+                <S.IntroTitle height="2.75rem">
                   Nintendo Switch Sports
                 </S.IntroTitle>
                 <S.BoardPostDate
@@ -624,8 +638,8 @@ const Section = () => {
                   <img
                     src={Korean}
                     css={css`
-                      width: 60px;
-                      height: 36px;
+                      width: 3.75rem;
+                      height: 2.25rem;
                       float: right;
                     `}
                   />
@@ -633,13 +647,13 @@ const Section = () => {
               </div>
               <div
                 css={css`
-                  margin-left: 32px;
+                  margin-left: 2rem;
                 `}
               >
                 <S.BoardImg backGroundImg={EventBaordImgs[12]} />
                 <div
                   css={css`
-                    font-size: 14px;
+                    font-size: 0.875rem;
                     color: #e60012;
                   `}
                 >
@@ -649,7 +663,7 @@ const Section = () => {
                       float: right;
                       display: flex;
                       justify-content: space-between;
-                      width: 106px;
+                      width: 6.625rem;
                     `}
                   >
                     <S.GameKategory>PK</S.GameKategory>
@@ -657,7 +671,9 @@ const Section = () => {
                     <S.GameKategory>체험판</S.GameKategory>
                   </span>
                 </div>
-                <S.IntroTitle height="44px">별의커비 디스커버리</S.IntroTitle>
+                <S.IntroTitle height="2.75rem">
+                  별의커비 디스커버리
+                </S.IntroTitle>
                 <S.BoardPostDate
                   css={css`
                     display: flex;
@@ -670,8 +686,8 @@ const Section = () => {
                   <img
                     src={Korean}
                     css={css`
-                      width: 60px;
-                      height: 36px;
+                      width: 3.75rem;
+                      height: 2.25rem;
                       float: right;
                     `}
                   />
@@ -680,13 +696,13 @@ const Section = () => {
 
               <div
                 css={css`
-                  margin-left: 32px;
+                  margin-left: 2rem;
                 `}
               >
                 <S.BoardImg backGroundImg={EventBaordImgs[13]} />
                 <div
                   css={css`
-                    font-size: 14px;
+                    font-size: 0.875rem;
                     color: #e60012;
                   `}
                 >
@@ -701,7 +717,7 @@ const Section = () => {
                     <S.GameKategory>PK</S.GameKategory>
                   </span>
                 </div>
-                <S.IntroTitle height="44px">링 피트 어드벤처</S.IntroTitle>
+                <S.IntroTitle height="2.75rem">링 피트 어드벤처</S.IntroTitle>
                 <S.BoardPostDate
                   css={css`
                     display: flex;
@@ -714,8 +730,8 @@ const Section = () => {
                   <img
                     src={Korean}
                     css={css`
-                      width: 60px;
-                      height: 36px;
+                      width: 3.75rem;
+                      height: 2.25rem;
                       float: right;
                     `}
                   />
@@ -724,6 +740,51 @@ const Section = () => {
             </S.Boards>
           </S.EventBoardsWrap>
         </S.MainGamesWrap>
+        <br />
+        <S.GameBannerWrap paddingTop="5.875rem">
+          <S.GameBanner backGroundImg={GameBanner[0]} />
+          <S.GameBanner backGroundImg={GameBanner[1]} />
+          <S.GameBanner backGroundImg={GameBanner[2]} />
+        </S.GameBannerWrap>
+
+        <S.GameBannerWrap paddingTop="2.75rem">
+          <S.GameBanner backGroundImg={GameBanner[3]} />
+          <S.GameBanner backGroundImg={GameBanner[4]} />
+          <S.GameBanner backGroundImg={GameBanner[5]} />
+        </S.GameBannerWrap>
+        <S.BuyGameContentWrap>
+          <h2
+            css={css`
+              text-align: center;
+            `}
+          >
+            쉽고 간편한 다운로드 버전으로도 즐길수 있습니다.
+          </h2>
+          <S.BuyBtnWrap>
+            <S.BuyBtn>
+              <S.BuyBtnImg>
+                <FontAwesomeIcon icon={faCartShopping} />
+              </S.BuyBtnImg>
+              다운로드 구입하기
+            </S.BuyBtn>
+            <S.BuyBtn>
+              <S.BuyBtnImg>
+                <FontAwesomeIcon icon={faCreditCard} />
+              </S.BuyBtnImg>
+              Nintendo Switch / 닌텐도 3DS
+              <br />
+              닌텐도 선불 카드 안내
+            </S.BuyBtn>
+            <S.BuyBtn>
+              <S.BuyBtnImg>
+                <FontAwesomeIcon icon={faGamepad} />
+              </S.BuyBtnImg>
+              Nintendo Switch
+              <br />
+              닌텐도 선불 번호 구입하기
+            </S.BuyBtn>
+          </S.BuyBtnWrap>
+        </S.BuyGameContentWrap>
       </S.Container>
     </section>
   );

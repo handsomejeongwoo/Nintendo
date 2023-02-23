@@ -2,12 +2,12 @@ import styled from "@emotion/styled/macro";
 
 export const Container = styled.div`
   width: 100%;
-  height: 74px;
+  height: 4.625rem;
   display: flex;
 `;
 
 export const LogoWrap = styled.div`
-  width: 306px;
+  width: 19.125rem;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -17,8 +17,8 @@ export const LogoWrap = styled.div`
 
 export const Logo = styled.div`
   background-image: url(https://www.nintendo.co.kr/images/renew/common/logo_nintendo_red.gif);
-  width: 122px;
-  height: 29px;
+  width: 7.625rem;
+  height: 1.8125rem;
   background-repeat: no-repeat;
 `;
 
@@ -34,11 +34,11 @@ export const ListWrap = styled.ul`
 export const ListTitle = styled.li`
   float: left;
   text-align: center;
-  width: 302.77px;
-  height: 74px;
+  width: 18.9231rem;
+  height: 4.625rem;
   background-color: #fff;
   border-right: 1px solid #d9d9d9;
-  font-size: 18px;
+  font-size: 1.125rem;
   letter-spacing: -0.03em;
   color: #111;
   position: relative;
@@ -52,7 +52,7 @@ export const ListContent = styled.ul`
   color: #111;
   display: none;
   height: 0;
-  padding: 20px 0;
+  padding: 1.25rem 0;
   background-color: #f7f7f7;
   border: 1px solid #d9d9d9;
   list-style: none;
@@ -61,9 +61,9 @@ export const ListContent = styled.ul`
   transition: all 1s;
 
   > li {
-    font-size: 15px;
+    font-size: 0.9375rem;
     line-height: 150%;
-    padding: 10px 10px 10px 30px;
+    padding: 0.625rem 0.625rem 0.625rem 1.875rem;
     cursor: pointer;
     &:hover {
       color: #e60012;
@@ -79,15 +79,16 @@ export const ListContent = styled.ul`
 export const Eshop = styled.div`
   background-image: url(https://www.nintendo.co.kr/images/renew/common/btn_head_eshop.gif);
   background-repeat: no-repeat;
-  width: 141px;
-  height: 75px;
+
+  width: 8.8125rem;
+  height: 4.6875rem;
 
   cursor: pointer;
 `;
 
 export const SearchClickBox = styled.div`
-  width: 75px;
-  height: 74px;
+  width: 4.6875rem;
+  height: 4.625rem;
   display: flex;
   justify-content: center;
   align-items: center;
